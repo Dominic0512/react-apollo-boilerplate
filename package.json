@@ -36,9 +36,23 @@
   },
   "dependencies": {
     "@apollo/react-hooks": "^3.1.5",
-    "apollo-boost": "^0.4.7",
+    "apollo-cache-inmemory": "^1.6.5",
+    "apollo-client": "^2.6.8",
+    "apollo-link": "^1.2.14",
+    "apollo-link-context": "^1.0.20",
+    "apollo-link-error": "^1.1.13",
+    "apollo-link-http": "^1.5.17",
+    "apollo-link-state": "^0.4.2",
+    "autoprefixer": "^9.7.6",
+    "bootstrap": "^4.4.1",
+    "css-loader": "^3.5.3",
     "graphql": "^15.0.0",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.0"
   }
 }
