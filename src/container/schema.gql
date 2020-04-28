@@ -1,0 +1,16 @@
+query ME {
+  me {
+    _id
+    email
+  }
+}
+
+mutation LOGIN($email: String!, $password: String!) {
+  login(email: $email, password: $password) {
+    user {
+      _id
+      email
+      token
+    }
+  }
+}
