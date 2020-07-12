@@ -8,6 +8,7 @@ import { ApolloProvider } from "@apollo/react-hooks";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Login from "./container/Login";
+import Signup from "./container/Signup";
 import LoggedIn from "./container/LoggedIn";
 
 const App = () => (
@@ -17,6 +18,9 @@ const App = () => (
       <Switch>
         <Route path="/" exact>
           <Login />
+        </Route>
+        <Route path="/signup" exact>
+          <Signup />
         </Route>
         <Route path="/logged-in" exact>
           <LoggedIn />

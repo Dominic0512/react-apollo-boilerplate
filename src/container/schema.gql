@@ -14,3 +14,12 @@ mutation LOGIN($email: String!, $password: String!) {
     }
   }
 }
+
+mutation SIGNUP($email: String!, $password: String!) {
+  signup(email: $email, password: $password) {
+    user {
+      _id
+      email
+    }
+  }
+}
