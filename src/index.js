@@ -1,15 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import client from "./config/apollo";
-import { ApolloProvider } from "@apollo/react-hooks";
+import client from './config/apollo'
+import { ApolloProvider } from '@apollo/react-hooks'
 
-import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
-import Login from "./container/Login";
-import Signup from "./container/Signup";
-import LoggedIn from "./container/LoggedIn";
+import Login from './container/Login'
+import Signup from './container/Signup'
+import LoggedIn from './container/LoggedIn'
 
 const App = () => (
   <ApolloProvider client={client}>
@@ -28,7 +28,7 @@ const App = () => (
       </Switch>
     </BrowserRouter>
   </ApolloProvider>
-);
+)
 
-const wrapper = document.getElementById("app");
-wrapper ? ReactDOM.render(<App />, wrapper) : false;
+const wrapper = document.getElementById('app')
+wrapper ? ReactDOM.render(<App />, wrapper) : false
