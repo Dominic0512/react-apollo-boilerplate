@@ -1,5 +1,5 @@
 {
-  "name": "client-panel",
+  "name": "react-apollo-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/i-appter/client-panel.git"
+    "url": "git@github.com:Dominic0512/react-apollo-boilerplate.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/i-appter/client-panel/issues"
+    "url": "https://github.com/Dominic0512/react-apollo-boilerplate/issues"
   },
-  "homepage": "https://gitlab.com/i-appter/client-panel#readme",
+  "homepage": "https://github.com/Dominic0512/react-apollo-boilerplate",
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
