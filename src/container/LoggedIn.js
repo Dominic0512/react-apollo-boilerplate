@@ -12,7 +12,7 @@ const LoggedIn = () => {
   if (getMeError) return <div>`Error! ${getMeError?.message}`</div>
 
   return (
-    <div>
+    <div className="d-flex justify-content-center">
       <h1>Logged In!!!!!</h1>
       <pre>{JSON.stringify(getMeData)}</pre>
     </div>

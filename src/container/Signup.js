@@ -48,53 +48,55 @@ const Signup = () => {
   }
 
   return (
-    <Form onSubmit={handleSubmit(signupResolver)}>
-      <Form.Group>
-        <Form.Label>Email address</Form.Label>
-        <Form.Control
-          type="text"
-          name="email"
-          placeholder="Enter email"
-          ref={register}
-          isInvalid={!!errors.email}
-        />
-        <Form.Control.Feedback type="invalid">
-          {errors.email?.message}
-        </Form.Control.Feedback>
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
-      </Form.Group>
-      <Form.Group>
-        <Form.Label>Password</Form.Label>
-        <Form.Control
-          type="password"
-          name="password"
-          placeholder="Password"
-          ref={register}
-          isInvalid={!!errors.password}
-        />
-        <Form.Control.Feedback type="invalid">
-          {errors.password?.message}
-        </Form.Control.Feedback>
-      </Form.Group>
-      <Form.Group>
-        <Form.Label>Confirm Password</Form.Label>
-        <Form.Control
-          type="password"
-          name="confirmPassword"
-          placeholder="ConfirmPassword"
-          ref={register}
-          isInvalid={!!errors.confirmPassword}
-        />
-        <Form.Control.Feedback type="invalid">
-          {errors.confirmPassword?.message}
-        </Form.Control.Feedback>
-      </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </Form>
+    <div className="d-flex justify-content-center">
+      <Form onSubmit={handleSubmit(signupResolver)}>
+        <Form.Group>
+          <Form.Label>Email address</Form.Label>
+          <Form.Control
+            type="text"
+            name="email"
+            placeholder="Enter email"
+            ref={register}
+            isInvalid={!!errors.email}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.email?.message}
+          </Form.Control.Feedback>
+          <Form.Text className="text-muted">
+            We'll never share your email with anyone else.
+          </Form.Text>
+        </Form.Group>
+        <Form.Group>
+          <Form.Label>Password</Form.Label>
+          <Form.Control
+            type="password"
+            name="password"
+            placeholder="Password"
+            ref={register}
+            isInvalid={!!errors.password}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.password?.message}
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group>
+          <Form.Label>Confirm Password</Form.Label>
+          <Form.Control
+            type="password"
+            name="confirmPassword"
+            placeholder="ConfirmPassword"
+            ref={register}
+            isInvalid={!!errors.confirmPassword}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.confirmPassword?.message}
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
+      </Form>
+    </div>
   )
 }
 

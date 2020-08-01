@@ -50,43 +50,45 @@ const Login = () => {
   }, [isAuthenticated])
 
   return (
-    <Form onSubmit={handleSubmit(loginResolver)}>
-      <Form.Group>
-        <Form.Label>Email address</Form.Label>
-        <Form.Control
-          type="text"
-          name="email"
-          placeholder="Enter email"
-          ref={register}
-          isInvalid={!!errors.email}
-        />
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
-        <Form.Control.Feedback type="invalid">
-          {errors.email?.message}
-        </Form.Control.Feedback>
-      </Form.Group>
-      <Form.Group>
-        <Form.Label>Password</Form.Label>
-        <Form.Control
-          type="password"
-          name="password"
-          placeholder="Password"
-          ref={register}
-          isInvalid={!!errors.password}
-        />
-        <Form.Control.Feedback type="invalid">
-          {errors.password?.message}
-        </Form.Control.Feedback>
-      </Form.Group>
-      <Form.Group>
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </Form>
+    <div className="d-flex justify-content-center">
+      <Form onSubmit={handleSubmit(loginResolver)}>
+        <Form.Group>
+          <Form.Label>Email address</Form.Label>
+          <Form.Control
+            type="text"
+            name="email"
+            placeholder="Enter email"
+            ref={register}
+            isInvalid={!!errors.email}
+          />
+          <Form.Text className="text-muted">
+            We'll never share your email with anyone else.
+          </Form.Text>
+          <Form.Control.Feedback type="invalid">
+            {errors.email?.message}
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group>
+          <Form.Label>Password</Form.Label>
+          <Form.Control
+            type="password"
+            name="password"
+            placeholder="Password"
+            ref={register}
+            isInvalid={!!errors.password}
+          />
+          <Form.Control.Feedback type="invalid">
+            {errors.password?.message}
+          </Form.Control.Feedback>
+        </Form.Group>
+        <Form.Group>
+          <Form.Check type="checkbox" label="Check me out" />
+        </Form.Group>
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
+      </Form>
+    </div>
   )
 }
 
