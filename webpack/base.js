@@ -10,9 +10,7 @@ module.exports = {
     path: appRoot.resolve('dist'),
   },
   plugins: [
-    new Dotenv({
-      path: '../.env',
-    }),
+    new Dotenv(),
     new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({
       filename: 'index.html',
