@@ -19,8 +19,8 @@ jobs:
       - checkout
       - heroku/install
       - run:
-          command: >
-            cp .env.example .env
+          name: Copy environment file
+          command: cp .env.example .env
       - heroku/deploy-via-git
 
 workflows:
