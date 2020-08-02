@@ -1,7 +1,6 @@
 const appRoot = require('app-root-path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
-const Dotenv = require('dotenv-webpack')
 
 module.exports = {
   entry: appRoot.resolve('src/index.js'),
